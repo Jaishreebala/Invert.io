@@ -18,17 +18,17 @@ button.addEventListener("click", () => {
 })
 
 
-function invertOn() {
-    var head = document.getElementsByTagName('head')[0];
-    var link = document.createElement('link');
-    link.rel = 'stylesheet';
-    link.type = 'text/css';
-    link.href = 'styles.css';
-    head.appendChild(link);
-}
-function invertOff() {
-    var head = document.getElementsByTagName('head')[0];
-    var link = document.getElementsByTagName('link')[1];
-    head.removeChild(link)
+// function invertOn() {
+//     var head = document.getElementsByTagName('head')[0];
+//     var link = document.createElement('link');
+//     link.rel = 'stylesheet';
+//     link.type = 'text/css';
+//     link.href = 'styles.css';
+//     head.appendChild(link);
+// }
+// function invertOff() {
+//     var head = document.getElementsByTagName('head')[0];
+//     var link = document.getElementsByTagName('link')[1];
+//     head.removeChild(link)
 
-}
+// }
