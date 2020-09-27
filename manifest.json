@@ -1,19 +1,21 @@
 {
-    "manifest_version": 2,
     "name": "Invert.io",
-    "version": "1.0",
+    "version": "1.0.0",
+    "manifest_version": 2,
     "description": "Bored of looking at websites the same way? Meet Invert.io, a chrome extension that can change your website from dark mood to light mode and vice versa! :) ",
+    "background": {
+        "scripts": [
+            "popup.js"
+        ],
+        "persistent": true
+    },
     "browser_action": {
+        "default_title": "Invert.io",
         "default_popup": "popup.html"
     },
-    "content_scripts": [
-        {
-            "matches": [
-                "<all_urls>"
-            ],
-            "css": [
-                "styles.css"
-            ]
-        }
+    "permissions": [
+        "https://*/*",
+        "http://*/*",
+        "tabs"
     ]
 }
